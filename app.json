@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "helpeachother",
+    "slug": "helpeachother",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/helpinghandlogo.jpg",
+    "scheme": "helpeachother",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/helpinghandlogo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.helpeachother"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/helpinghandlogo.jpg"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/helpinghandlogo.jpg",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font",[
+      "expo-camera",
+        {
+          "cameraPermission": "Allow helpeachother to access your camera",
+          "microphonePermission": "Allow helpeachother to access your microphone",
+          "recordAudioAndroid": true
+        }]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
